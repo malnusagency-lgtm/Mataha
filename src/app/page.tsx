@@ -9,7 +9,7 @@ import CtaSection from "@/components/sections/CtaSection";
 
 export default function Home() {
   return (
-    <main className="relative bg-brand-light dark:bg-brand-dark min-h-screen selection:bg-brand-orange selection:text-white">
+    <main className="relative bg-brand-light dark:bg-brand-dark min-h-screen selection:bg-brand-orange selection:text-white overflow-x-hidden">
       <Preloader />
       <Navbar />
       <Hero />

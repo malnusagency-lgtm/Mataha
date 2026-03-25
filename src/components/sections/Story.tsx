@@ -70,7 +70,7 @@ export default function Story() {
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.15] mix-blend-overlay pointer-events-none" />
       
       <div ref={imgRef} className="absolute -left-20 top-1/4 md:top-20 w-80 h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl opacity-0 transform-gpu rotate-[-5deg] z-0 hidden md:block group">
-        <Image src="/logo.jpg" alt="Mataha Culture" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+        <Image src="/gallery/5.jpg" alt="Mataha Culture" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
         <div className="absolute inset-0 bg-brand-orange/20 mix-blend-color z-10 pointer-events-none" />
       </div>
       

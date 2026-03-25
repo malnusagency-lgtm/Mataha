@@ -10,10 +10,10 @@ if (typeof window !== "undefined") {
 }
 
 const events = [
-  { id: 1, title: "Origin", date: "April 12, 2026", location: "Nairobi", img: "/logo.jpg" },
-  { id: 2, title: "The Pulse", date: "May 25, 2026", location: "Mombasa", img: "/logo.jpg" },
-  { id: 3, title: "Echoes", date: "July 10, 2026", location: "Kisumu", img: "/logo.jpg" },
-  { id: 4, title: "Awakening", date: "Sept 05, 2026", location: "Naivasha", img: "/logo.jpg" }
+  { id: 1, title: "Origin", date: "April 12, 2026", location: "Nairobi", img: "/gallery/7.jpg" },
+  { id: 2, title: "The Pulse", date: "May 25, 2026", location: "Mombasa", img: "/gallery/8.jpg" },
+  { id: 3, title: "Echoes", date: "July 10, 2026", location: "Kisumu", img: "/gallery/9.jpg" },
+  { id: 4, title: "Awakening", date: "Sept 05, 2026", location: "Naivasha", img: "/gallery/10.jpg" }
 ];
 
 export default function Events() {
