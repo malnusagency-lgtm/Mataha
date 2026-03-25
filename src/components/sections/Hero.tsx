@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import gsap from "gsap";
 
@@ -80,7 +81,7 @@ export default function Hero() {
         </p>
 
         <div className="hero-cta mt-12 opacity-0">
-          <button className="interactive group relative px-8 py-4 bg-white text-brand-dark rounded-full font-bold overflow-hidden cursor-none">
+          <Link href="#story" className="interactive group relative px-8 py-4 bg-white text-brand-dark rounded-full font-bold overflow-hidden cursor-none inline-block">
             <span className="relative z-10 flex items-center gap-2">
               Discover More
               <motion.span 
@@ -95,7 +96,7 @@ export default function Hero() {
             <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 z-20 pointer-events-none">
               Discover More &rarr;
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

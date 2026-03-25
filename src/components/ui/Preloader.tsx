@@ -10,7 +10,6 @@ export default function Preloader() {
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    // Disable scrolling while loading
     document.body.style.overflow = "hidden";
 
     const tl = gsap.timeline({
@@ -20,7 +19,6 @@ export default function Preloader() {
       },
     });
 
-    // Simple rhythmic pulsing animation
     tl.to(textRef.current, {
       scale: 1.1,
       duration: 0.4,
@@ -45,34 +43,31 @@ export default function Preloader() {
       {isLoading && (
         <motion.div
           ref={containerRef}
-          className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-brand-dark text-brand-orange"
+          className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-brand-dark"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
         >
           <div className="relative overflow-hidden">
-            <h1 ref={textRef} className="text-6xl md:text-8xl font-heading font-bold uppercase tracking-widest">
-              Mataha
+            <h1 ref={textRef} className="text-5xl md:text-8xl font-heading font-bold uppercase tracking-widest text-brand-orange">
+              Mataha <span className="text-white">Experience</span>
             </h1>
           </div>
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
-            <div className="flex gap-2">
-              <motion.div
-                animate={{ height: ["10px", "30px", "10px"] }}
-                transition={{ repeat: Infinity, duration: 0.6, delay: 0 }}
-                className="w-2 bg-brand-orange rounded-full"
-              />
-              <motion.div
-                animate={{ height: ["10px", "40px", "10px"] }}
-                transition={{ repeat: Infinity, duration: 0.6, delay: 0.2 }}
-                className="w-2 bg-brand-yellow rounded-full"
-              />
-              <motion.div
-                animate={{ height: ["10px", "20px", "10px"] }}
-                transition={{ repeat: Infinity, duration: 0.6, delay: 0.4 }}
-                className="w-2 bg-brand-green rounded-full"
-              />
-            </div>
-            <span className="text-sm font-heading font-bold uppercase tracking-[0.3em] text-white/50">MATAHA</span>
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
+            <motion.div
+              animate={{ height: ["10px", "30px", "10px"] }}
+              transition={{ repeat: Infinity, duration: 0.6, delay: 0 }}
+              className="w-2 bg-brand-orange rounded-full"
+            />
+            <motion.div
+              animate={{ height: ["10px", "40px", "10px"] }}
+              transition={{ repeat: Infinity, duration: 0.6, delay: 0.2 }}
+              className="w-2 bg-brand-yellow rounded-full"
+            />
+            <motion.div
+              animate={{ height: ["10px", "20px", "10px"] }}
+              transition={{ repeat: Infinity, duration: 0.6, delay: 0.4 }}
+              className="w-2 bg-brand-green rounded-full"
+            />
           </div>
         </motion.div>
       )}

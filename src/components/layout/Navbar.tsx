@@ -56,14 +56,14 @@ export default function Navbar() {
           
           <div className="hidden md:flex items-center gap-8 font-medium">
             <Link href="#story" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Story</Link>
-            <Link href="#events" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Events</Link>
-            <Link href="#gallery" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Gallery</Link>
+            <Link href="/events" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Events</Link>
+            <Link href="/gallery" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Gallery</Link>
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="interactive hidden md:block px-6 py-2 bg-brand-orange text-white rounded-full font-medium hover:bg-orange-600 transition-colors shadow-lg">
+            <Link href="/events" className="interactive hidden md:block px-6 py-2 bg-brand-orange text-white rounded-full font-medium hover:bg-orange-600 transition-colors shadow-lg">
               Get Tickets
-            </button>
+            </Link>
             <button 
               className="interactive md:hidden p-2 rounded-full text-brand-dark dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -85,14 +85,15 @@ export default function Navbar() {
             className="fixed inset-0 z-[105] bg-brand-dark/95 backdrop-blur-xl flex flex-col items-center justify-center gap-10"
           >
             <Link href="#story" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Story</Link>
-            <Link href="#events" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Events</Link>
-            <Link href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Gallery</Link>
-            <button 
+            <Link href="/events" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Events</Link>
+            <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Gallery</Link>
+            <Link 
+              href="/events"
               onClick={() => setIsMobileMenuOpen(false)} 
-              className="mt-6 px-8 py-4 bg-brand-orange text-white rounded-full font-bold uppercase text-lg hover:bg-orange-600 transition-colors shadow-xl"
+              className="mt-6 px-8 py-4 bg-brand-orange text-white rounded-full font-bold uppercase text-lg hover:bg-orange-600 transition-colors shadow-xl inline-block"
             >
               Get Tickets
-            </button>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

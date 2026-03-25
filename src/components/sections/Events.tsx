@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -75,11 +76,12 @@ export default function Events() {
             <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full z-30 transform md:translate-y-6 group-hover:translate-y-0 transition-transform duration-500 ease-out">
               <span className="text-brand-orange font-bold uppercase tracking-widest text-xs md:text-sm mb-2 block">{event.date} // {event.location}</span>
               <h3 className="text-3xl md:text-5xl font-heading font-bold uppercase mb-4 text-white drop-shadow-lg">{event.title}</h3>
-              <button 
-                className="interactive px-5 py-2 md:px-6 md:py-3 bg-brand-orange text-white rounded-full font-medium opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover:bg-white hover:text-brand-orange text-sm md:text-base border border-transparent shadow-xl"
+              <Link 
+                href="/events"
+                className="interactive px-5 py-2 md:px-6 md:py-3 bg-brand-orange text-white rounded-full font-medium opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover:bg-white hover:text-brand-orange text-sm md:text-base border border-transparent shadow-xl inline-block"
               >
                 Get Tickets
-              </button>
+              </Link>
             </div>
           </div>
         ))}

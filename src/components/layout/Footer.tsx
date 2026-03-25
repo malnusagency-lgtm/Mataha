@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -15,9 +16,9 @@ export default function Footer() {
           <p className="text-white/70 max-w-sm mx-auto md:mx-0 text-lg">
             This is not an event. This is an experience. Join us and immerse yourself in the Mataha culture.
           </p>
-          <button className="interactive px-8 py-4 bg-transparent border border-brand-orange text-brand-orange rounded-full text-lg font-medium hover:bg-brand-orange hover:text-white transition-all duration-300">
-            Join the Waitlist
-          </button>
+          <Link href="/events" className="interactive inline-block px-8 py-4 bg-transparent border border-brand-orange text-brand-orange rounded-full text-lg font-medium hover:bg-brand-orange hover:text-white transition-all duration-300">
+            View Events
+          </Link>
         </div>
 
         <div className="flex flex-col items-center md:items-end justify-between h-full gap-12">
@@ -25,15 +26,15 @@ export default function Footer() {
              <Image src="/logo.jpg" alt="Mataha Logo" fill className="object-cover" />
            </div>
            
-           <div className="flex items-center gap-6 font-medium">
-            <Link href="https://www.instagram.com/mataha_experience" target="_blank" className="interactive text-white/50 hover:text-brand-orange transition-colors">
-              Instagram
+           <div className="flex items-center gap-6">
+            <Link href="https://www.instagram.com/mataha_experience" target="_blank" className="interactive group">
+              <FaInstagram className="w-7 h-7 text-white/50 group-hover:text-pink-500 transition-colors duration-300" />
             </Link>
-            <Link href="#" className="interactive text-white/50 hover:text-brand-orange transition-colors">
-              Twitter
+            <Link href="#" className="interactive group">
+              <FaXTwitter className="w-7 h-7 text-white/50 group-hover:text-white transition-colors duration-300" />
             </Link>
-            <Link href="#" className="interactive text-white/50 hover:text-brand-orange transition-colors">
-              Contact
+            <Link href="#" className="interactive group">
+              <FaTiktok className="w-7 h-7 text-white/50 group-hover:text-[#00f2ea] transition-colors duration-300" />
             </Link>
            </div>
         </div>

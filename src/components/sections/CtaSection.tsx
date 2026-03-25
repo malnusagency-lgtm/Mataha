@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function CtaSection() {
@@ -26,14 +27,14 @@ export default function CtaSection() {
           Tickets for the upcoming highly anticipated Mataha events are strictly limited. Secure your spot now.
         </p>
         
-        <button className="interactive group relative px-12 py-6 bg-brand-dark text-white rounded-full font-bold text-xl overflow-hidden shadow-2xl">
+        <Link href="/events" className="interactive group relative px-12 py-6 bg-brand-dark text-white rounded-full font-bold text-xl overflow-hidden shadow-2xl inline-block">
           <span className="relative z-10 flex items-center justify-center gap-3 transition-transform duration-300 group-hover:-translate-y-[200%]">
             Get Your Tickets Now
           </span>
           <span className="absolute inset-0 z-10 flex items-center justify-center gap-3 translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0 text-brand-dark bg-brand-orange">
             Get Your Tickets Now
           </span>
-        </button>
+        </Link>
       </motion.div>
     </section>
   );
