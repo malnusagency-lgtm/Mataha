@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef} 
-      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-dark text-white pt-20"
+      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-dark text-white pt-28"
     >
       {/* Background Visuals */}
       <motion.div 
