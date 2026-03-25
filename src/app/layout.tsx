@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
@@ -15,9 +15,18 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+};
+
 export const metadata: Metadata = {
   title: "Mataha Experience | This is not an event. This is an experience.",
   description: "An immersive, cinematic, and emotionally engaging digital experience for the Mataha brand.",
+  appleWebApp: {
+    capable: true,
+    title: "Mataha",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export default function RootLayout({
