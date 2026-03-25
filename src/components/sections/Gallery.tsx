@@ -7,10 +7,14 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 const images = [
   { id: 1, src: "/gallery/1.jpg", alt: "Mataha crowd energy", size: "tall" },
   { id: 2, src: "/gallery/2.jpg", alt: "Live DJ performance", size: "wide" },
-  { id: 3, src: "/gallery/3.jpg", alt: "Festival vibes and dancing", size: "square" },
+  { id: 3, src: "/gallery/3.jpg", alt: "Festival vibes and dancing", size: "tall" },
   { id: 4, src: "/gallery/4.jpg", alt: "African cultural celebration", size: "square" },
   { id: 5, src: "/gallery/5.jpg", alt: "Dance floor moments", size: "tall" },
   { id: 6, src: "/gallery/6.jpg", alt: "Night life atmosphere", size: "wide" },
+  { id: 7, src: "/gallery/7.jpg", alt: "Stage performance", size: "square" },
+  { id: 8, src: "/gallery/8.jpg", alt: "Crowd vibes", size: "tall" },
+  { id: 9, src: "/gallery/9.jpg", alt: "Cultural showcase", size: "wide" },
+  { id: 10, src: "/gallery/10.jpg", alt: "Mataha experience moments", size: "square" },
 ];
 
 export default function Gallery() {
@@ -66,7 +70,7 @@ export default function Gallery() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 overflow-visible">
           {/* Column 1 */}
           <motion.div style={{ y: isMobile ? 0 : y1 }} className="flex flex-col gap-6 md:gap-8 h-max">
-            {images.slice(0, 2).map((img) => (
+            {images.slice(0, 4).map((img) => (
               <div 
                 key={img.id} 
                 className={`interactive relative w-full rounded-2xl overflow-hidden cursor-none group ${img.size === 'tall' ? 'h-[500px]' : 'h-[300px]'}`}
@@ -80,7 +84,7 @@ export default function Gallery() {
           
           {/* Column 2 */}
           <motion.div style={{ y: isMobile ? 0 : y2 }} className="flex flex-col gap-6 md:gap-8 mt-12 md:mt-24 h-max">
-            {images.slice(2, 4).map((img) => (
+            {images.slice(4, 7).map((img) => (
               <div 
                 key={img.id} 
                 className={`interactive relative w-full rounded-2xl overflow-hidden cursor-none group ${img.size === 'tall' ? 'h-[500px]' : 'h-[400px]'}`}
@@ -94,7 +98,7 @@ export default function Gallery() {
 
           {/* Column 3 */}
           <motion.div style={{ y: isMobile ? 0 : y3 }} className="flex flex-col gap-6 md:gap-8 mt-6 md:mt-12 h-max">
-            {images.slice(4, 6).map((img) => (
+            {images.slice(7, 10).map((img) => (
               <div 
                 key={img.id} 
                 className={`interactive relative w-full rounded-2xl overflow-hidden cursor-none group ${img.size === 'tall' ? 'h-[600px]' : 'h-[350px]'}`}

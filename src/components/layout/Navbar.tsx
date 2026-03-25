@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="relative w-12 h-12 overflow-hidden rounded-full border border-white/10 group-hover:border-brand-orange transition-colors duration-300 bg-white">
              <Image src="/logo.jpg" alt="Mataha Logo" fill className="object-cover" />
           </div>
-          <span className="font-heading font-bold text-xl tracking-wide text-brand-dark dark:text-brand-light">MATAHA</span>
+          <span className="font-heading font-bold text-xl tracking-wide text-brand-dark dark:text-brand-light">MATAHA <span className="text-brand-orange">Experience</span></span>
         </Link>
         
         <div className="hidden md:flex items-center gap-8 font-medium">
