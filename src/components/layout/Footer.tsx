@@ -28,13 +28,13 @@ export default function Footer() {
            
            <div className="flex items-center gap-6">
             <Link href="https://www.instagram.com/mataha_experience" target="_blank" className="interactive group">
-              <FaInstagram className="w-7 h-7 text-white/50 group-hover:text-pink-500 transition-colors duration-300" />
+              <FaInstagram className="w-7 h-7 text-[#E1306C] hover:scale-110 transition-transform duration-300" />
             </Link>
             <Link href="#" className="interactive group">
-              <FaXTwitter className="w-7 h-7 text-white/50 group-hover:text-white transition-colors duration-300" />
+              <FaXTwitter className="w-7 h-7 text-white hover:scale-110 transition-transform duration-300" />
             </Link>
             <Link href="#" className="interactive group">
-              <FaTiktok className="w-7 h-7 text-white/50 group-hover:text-[#00f2ea] transition-colors duration-300" />
+              <FaTiktok className="w-7 h-7 text-[#00f2ea] hover:scale-110 transition-transform duration-300" />
             </Link>
            </div>
         </div>

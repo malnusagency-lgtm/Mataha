@@ -47,8 +47,8 @@ export default function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
         >
-          <div className="relative overflow-hidden">
-            <h1 ref={textRef} className="text-5xl md:text-8xl font-heading font-bold uppercase tracking-widest text-brand-orange">
+          <div className="relative overflow-hidden w-full px-4">
+            <h1 ref={textRef} className="text-center text-5xl md:text-8xl font-heading font-bold uppercase tracking-widest text-brand-orange">
               Mataha <span className="text-white">Experience</span>
             </h1>
           </div>
