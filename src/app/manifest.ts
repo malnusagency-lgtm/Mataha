@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Mataha Experience",
     short_name: "Mataha",
-    description: "An immersive, cinematic, and emotionally engaging digital experience for the Mataha brand.",
+    description: "This is not an event. This is an experience.",
     start_url: "/",
     display: "standalone",
     background_color: "#0a0a0a",

@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Mataha Experience | This is not an event. This is an experience.",
-  description: "An immersive, cinematic, and emotionally engaging digital experience for the Mataha brand.",
+  description: "This is not an event. This is an experience.",
   appleWebApp: {
     capable: true,
     title: "Mataha",
