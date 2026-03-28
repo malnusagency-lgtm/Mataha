@@ -40,7 +40,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef} 
-      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-dark text-white pt-28"
+      className="relative h-[100dvh] w-full flex items-center justify-center overflow-hidden bg-brand-dark text-white pt-28"
     >
       {/* Background Visuals */}
       <motion.div 
@@ -48,11 +48,11 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-brand-brown)_0%,_transparent_70%)] opacity-30" />
-        <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-brand-orange/10 rounded-full blur-[120px]" />
-        <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-brand-green/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/4 -right-1/4 w-[300px] h-[300px] md:w-[800px] md:h-[800px] bg-brand-orange/10 rounded-full blur-[60px] md:blur-[120px]" />
+        <div className="absolute -bottom-1/4 -left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-brand-green/10 rounded-full blur-[60px] md:blur-[120px]" />
         
         {/* subtle noise overlay */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] md:opacity-20 mix-blend-normal md:mix-blend-overlay" />
       </motion.div>
 
       {/* Content */}
@@ -80,24 +80,6 @@ export default function Hero() {
           A journey through sound, art, and motion.
         </p>
 
-        <div className="hero-cta mt-12 opacity-0">
-          <Link href="#story" className="interactive group relative px-8 py-4 bg-white text-brand-dark rounded-full font-bold overflow-hidden cursor-none inline-block">
-            <span className="relative z-10 flex items-center gap-2">
-              Discover More
-              <motion.span 
-                className="inline-block"
-                animate={{ x: [0, 5, 0] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-              >
-                &rarr;
-              </motion.span>
-            </span>
-            <div className="absolute inset-0 bg-brand-orange transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100" />
-            <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 z-20 pointer-events-none">
-              Discover More &rarr;
-            </span>
-          </Link>
-        </div>
       </div>
     </section>
   );

@@ -52,10 +52,10 @@ export default function Events() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="events" className="relative h-[80vh] md:h-screen w-full bg-brand-brown text-brand-light overflow-hidden flex flex-col justify-center">
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.2] mix-blend-overlay pointer-events-none" />
+    <section ref={sectionRef} id="events" className="relative h-[80dvh] md:h-[100dvh] w-full bg-brand-brown text-brand-light overflow-hidden flex flex-col justify-center">
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] md:opacity-[0.2] mix-blend-normal md:mix-blend-overlay pointer-events-none" />
       
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vh] bg-brand-dark/80 rounded-[100%] blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vh] md:w-[120vw] md:h-[120vh] bg-brand-dark/80 rounded-[100%] blur-[80px] md:blur-[150px] pointer-events-none" />
 
       <div className="absolute top-12 md:top-20 left-6 md:left-24 z-20">
         <h2 className="text-4xl md:text-8xl font-heading font-black uppercase tracking-tighter text-transparent" style={{ WebkitTextStroke: "1px rgba(245, 245, 245, 0.4)", color: "rgba(245, 245, 245, 0.05)"}}>
@@ -85,6 +85,25 @@ export default function Events() {
             </div>
           </div>
         ))}
+
+        {/* Explore All Events CTA Card */}
+        <div className="group relative w-full md:w-[450px] h-[300px] md:h-[600px] rounded-2xl overflow-hidden shrink-0 cursor-none shadow-2xl flex items-center justify-center bg-brand-dark/50 border border-white/10 hover:border-brand-orange/50 transition-colors duration-500">
+           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-brand-orange)_0%,_transparent_70%)] opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none" />
+           <div className="text-center p-8 z-10 relative">
+             <h3 className="text-3xl md:text-5xl font-heading font-black uppercase mb-6 text-white group-hover:text-brand-orange transition-colors duration-300">
+               Want More?
+             </h3>
+             <p className="text-white/60 mb-8 max-w-xs mx-auto">
+               Discover the full lineup of Mataha experiences happening across the country.
+             </p>
+             <Link 
+                href="/events"
+                className="interactive px-8 py-4 bg-transparent border-2 border-brand-orange text-brand-orange rounded-full font-bold uppercase tracking-widest hover:bg-brand-orange hover:text-white transition-all duration-300 shadow-[0_0_30px_rgba(255,87,34,0.3)] hover:shadow-[0_0_50px_rgba(255,87,34,0.6)] inline-block"
+              >
+                View All Events &rarr;
+              </Link>
+           </div>
+        </div>
       </div>
     </section>
   );

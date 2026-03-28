@@ -16,7 +16,7 @@ export default function CtaSection() {
 
   return (
     <section ref={containerRef} className="py-32 px-6 bg-brand-light text-brand-dark flex flex-col items-center justify-center relative overflow-hidden min-h-[70vh]">
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.1] mix-blend-overlay pointer-events-none" />
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] md:opacity-[0.1] mix-blend-normal md:mix-blend-overlay pointer-events-none" />
       
       <motion.div style={{ scale, opacity }} className="relative z-10 flex flex-col items-center text-center max-w-4xl">
         <h2 className="text-5xl md:text-8xl font-heading font-black uppercase tracking-tighter mb-8 leading-tight">

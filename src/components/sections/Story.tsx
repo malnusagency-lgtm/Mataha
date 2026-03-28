@@ -66,8 +66,8 @@ export default function Story() {
   const storyText = "Mataha is more than music. It is the heartbeat of a generation finding its voice. Rooted in pure African rhythm, elevated by boundless modern energy. We don't just throw parties. We craft memories that linger long after the bass fades.";
 
   return (
-    <section ref={containerRef} id="story" className="relative h-screen w-full bg-brand-light text-brand-dark flex flex-col md:flex-row items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.15] mix-blend-overlay pointer-events-none" />
+    <section ref={containerRef} id="story" className="relative h-[100dvh] w-full bg-brand-light text-brand-dark flex flex-col md:flex-row items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] md:opacity-[0.15] mix-blend-normal md:mix-blend-overlay pointer-events-none" />
       
       <div ref={imgRef} className="absolute -left-20 top-1/4 md:top-20 w-80 h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl opacity-0 transform-gpu rotate-[-5deg] z-0 hidden md:block group">
         <Image src="/logo.jpg" alt="Mataha Culture" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
