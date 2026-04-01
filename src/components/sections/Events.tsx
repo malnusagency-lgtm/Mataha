@@ -58,7 +58,7 @@ export default function Events() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vh] md:w-[120vw] md:h-[120vh] bg-brand-dark/80 rounded-[100%] blur-[80px] md:blur-[150px] pointer-events-none" />
 
       <div className="absolute top-12 md:top-20 left-6 md:left-24 z-20">
-        <h2 className="text-4xl md:text-8xl font-heading font-black uppercase tracking-tighter text-transparent" style={{ WebkitTextStroke: "1px rgba(46, 107, 58, 0.4)", color: "rgba(46, 107, 58, 0.05)"}}>
+        <h2 className="text-4xl md:text-8xl font-heading font-black uppercase tracking-tighter text-transparent" style={{ WebkitTextStroke: "1px rgba(245, 245, 245, 0.4)", color: "rgba(245, 245, 245, 0.05)"}}>
           Upcoming Exp.
         </h2>
       </div>
