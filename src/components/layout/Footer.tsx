@@ -22,9 +22,9 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center md:items-end justify-between h-full gap-12">
-           <div className="relative w-32 h-32 rounded-full overflow-hidden border border-white/10 shadow-xl bg-white">
+           <Link href="/" className="interactive group relative w-32 h-32 rounded-full overflow-hidden border border-white/10 shadow-xl bg-white block">
              <Image src="/logo.jpg" alt="Mataha Logo" fill className="object-cover" />
-           </div>
+           </Link>
            
            <div className="flex items-center gap-6">
             <Link href="https://www.instagram.com/mataha_experience" target="_blank" className="interactive group">
