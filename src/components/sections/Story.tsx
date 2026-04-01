@@ -75,7 +75,7 @@ export default function Story() {
       </div>
       
       <div className="max-w-5xl mx-auto px-6 relative z-10 w-full pl-6 md:pl-48">
-        <div ref={textRef} className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-sans font-medium leading-[1.2] tracking-tight">
+        <div ref={textRef} className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-medium leading-[1.2] tracking-tight">
           {storyText.split(" ").map((word, i) => (
             <span key={i} className="story-word inline-block mr-3 md:mr-5 mb-2">
               {word}
