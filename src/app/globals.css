@@ -22,7 +22,7 @@
   --color-brand-light: #F5F5F5;
   --color-brand-dark: #0B0B0B;
   
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   @supports (-webkit-hyphens:none) {
     .glass {
       -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
     }
   }
 }
