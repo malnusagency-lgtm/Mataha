@@ -68,7 +68,7 @@ export default function Events() {
         className="flex flex-col md:flex-row gap-8 md:gap-24 px-6 md:px-48 pt-32 md:pt-20 h-full md:h-[70vh] items-center relative z-10 w-full md:w-max overflow-y-auto md:overflow-visible pb-12"
       >
         {events.map((event) => (
-          <div key={event.id} className="group relative w-full md:w-[450px] h-[300px] md:h-[600px] rounded-2xl overflow-hidden shrink-0 cursor-none shadow-2xl">
+          <div key={event.id} className="group relative w-full md:w-[450px] h-[300px] md:h-[600px] rounded-2xl overflow-hidden shrink-0 shadow-2xl">
             <div className="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
             <Image src={event.img} alt={event.title} fill className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-20" />
@@ -87,7 +87,7 @@ export default function Events() {
         ))}
 
         {/* Explore All Events CTA Card */}
-        <div className="group relative w-full md:w-[450px] h-[300px] md:h-[600px] rounded-2xl overflow-hidden shrink-0 cursor-none shadow-2xl flex items-center justify-center bg-brand-dark/50 border border-white/10 hover:border-brand-orange/50 transition-colors duration-500">
+        <div className="group relative w-full md:w-[450px] h-[300px] md:h-[600px] rounded-2xl overflow-hidden shrink-0 shadow-2xl flex items-center justify-center bg-brand-dark/50 border border-white/10 hover:border-brand-orange/50 transition-colors duration-500">
            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-brand-orange)_0%,_transparent_70%)] opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none" />
            <div className="text-center p-8 z-10 relative">
              <h3 className="text-3xl md:text-5xl font-heading font-black uppercase mb-6 text-white group-hover:text-brand-orange transition-colors duration-300">

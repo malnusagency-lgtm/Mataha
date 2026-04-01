@@ -56,7 +56,7 @@ export default function Navbar() {
           
           <div className="hidden md:flex items-center gap-8 font-medium">
             <Link href="/" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Home</Link>
-            <Link href="#story" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Story</Link>
+            <Link href="/#story" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Story</Link>
             <Link href="/events" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Events</Link>
             <Link href="/gallery" className="interactive text-brand-dark dark:text-brand-light hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Gallery</Link>
           </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
             className="fixed inset-0 z-[105] bg-brand-dark/95 backdrop-blur-xl flex flex-col items-center justify-center gap-10"
           >
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Home</Link>
-            <Link href="#story" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Story</Link>
+            <Link href="/#story" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Story</Link>
             <Link href="/events" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Events</Link>
             <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-4xl font-heading font-black uppercase text-white hover:text-brand-orange transition-colors">Gallery</Link>
             <Link 

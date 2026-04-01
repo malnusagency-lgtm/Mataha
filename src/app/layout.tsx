@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
-import CustomCursor from "@/components/ui/CustomCursor";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -36,7 +35,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <LenisProvider>
-          <CustomCursor />
           {children}
         </LenisProvider>
       </body>
